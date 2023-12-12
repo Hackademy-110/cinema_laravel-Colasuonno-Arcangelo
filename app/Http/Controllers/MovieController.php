@@ -70,4 +70,20 @@ class MovieController extends Controller
     public function movieIndex(){
         return view('movie-index',['movies'=>$this->movies]);
     }
+
+    
+
+    public function moviesDetail($id){
+
+        foreach($this->movies as $movie){
+            if($movie['id']== $id){
+                return view('movies-detail',['movie'=>$movie]);
+            }
+
+        }
+       abort(404);
+    
+    }
+
+
 }

@@ -1,7 +1,7 @@
-<div class="container my-5" data-bs-theme='dark'>
-    <div class="p-5 text-center bg-body-tertiary rounded-3">
-      <div class="row">
-        <div class="col-12 col-lg-8" >
+<div class="container my-5 p-5 text-center  ">
+    {{-- <div class=""> --}}
+      <div class="row justify-content-center" >
+        <div class="col-12 col-lg-8 bg-warning rounded-3" >
          <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
       <h1 class="text-body-emphasis">{{$title}}</h1>
       <p class="col-lg-8 mx-auto fs-5 text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
