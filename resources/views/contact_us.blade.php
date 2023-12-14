@@ -4,6 +4,16 @@
     title="Scrivimi quello che vuoi"
     background="bg-body-tertiary"
     > </x-partecentrale>
+    
+    
+    
+    @if (session('emailErrorSend'))
+    <div class="alert alert-danger">
+        {{ session('emailErrorSend') }}
+    </div>
+      @endif
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 bg-white shadow p-4">
