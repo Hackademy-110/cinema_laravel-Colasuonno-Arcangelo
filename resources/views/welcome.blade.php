@@ -7,11 +7,11 @@
       <x-partecentrale
       title='Benvenuto al THE SPACE'
       ></x-partecentrale>
-      {{-- fine parte centrale  --}}
-
-      {{-- inzio footer --}}
-      
-      {{-- fine footer --}}
+      @if (session('sendEmailSuccess'))
+    <div class="alert alert-success">
+        {{ session('sendEmailSuccess') }}
+    </div>
+      @endif
     
     </x-layout>
     

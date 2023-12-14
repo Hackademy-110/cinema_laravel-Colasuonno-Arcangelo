@@ -24,3 +24,8 @@ Route::get('/movie/detail/{id}',[MovieController::class,'moviesDetail'])->name('
 
 Route::get('/contact-us', [PublicController::class,'contact_us'])->name('contact_us');
 
+Route::post('/contact-us/submit', [PublicController::class,'contact_us_submit'])->name('contact_us_submit');
+
+Route::get('/thank-you/page', [PublicController::class,'thankyou_page'])->name('thankyou_page');
+
+
